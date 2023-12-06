@@ -28,6 +28,14 @@
     align-items: center;
   }
 
+  &__startup {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(1440px - (144px * 2));
+    justify-content: center;
+    align-items: center;
+  }
+
   &__join {
     display: flex;
     flex-direction: column;
