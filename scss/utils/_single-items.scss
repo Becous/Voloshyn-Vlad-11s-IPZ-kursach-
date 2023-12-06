@@ -54,6 +54,8 @@
     transform: rotate(3.672deg);
     z-index: 2;
   }
+  &__tab {
+  }
 }
 .block {
   &__icon {
@@ -71,17 +73,21 @@
     position: relative;
     z-index: 1;
   }
+  &__img {
+    width: 40.5px;
+    height: 40px;
+  }
 
   &__button {
     position: absolute;
-    height: 51%;
+    height: 50%;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 29.26px 28.12px;
     background: linear-gradient(#181818, #181818cc);
-    z-index: 0;
+    z-index: 1;
     left: 320px;
   }
 }

@@ -14,6 +14,13 @@
     align-items: center;
     flex-direction: column;
   }
+  &__tab {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(1440px - (334px * 2));
+    justify-content: center;
+    align-items: center;
+  }
   &__text {
     display: flex;
     max-width: calc(1440px - (141px * 2));

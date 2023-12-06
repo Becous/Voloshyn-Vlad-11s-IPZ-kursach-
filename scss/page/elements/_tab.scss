@@ -1,0 +1,58 @@
+.tab {
+  padding: 77px 0 93.51px 0;
+  text-align: center;
+  background-color: $green;
+  &__title {
+    @include font(66px, 700);
+    color: $black;
+    margin-bottom: 62px;
+  }
+  &__block-box {
+    background-color: white;
+    padding: 55px 85px;
+    border-radius: 16px;
+    position: relative;
+  }
+  &__button-box-text {
+    @include font(18px, 700);
+    color: $black;
+    font-family: $font_cavet;
+    transform: rotate(14.854deg);
+  }
+
+  &__pointer-box {
+    width: 123px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    & .tab__stroke {
+      transform: rotate(-177deg);
+      margin-bottom: 10px;
+    }
+    &_left {
+      left: -165px;
+      top: 20px;
+    }
+    &_right {
+      left: 600px;
+      top: 50px;
+      & .tab__stroke {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  &__stroke {
+    width: 70px;
+    height: 60px;
+    color: $black;
+    fill: currentColor;
+  }
+
+  &__text {
+    @include font(20px, 500);
+    color: $black;
+    margin-top: 51px;
+  }
+}
