@@ -1,0 +1,13 @@
+.footer {
+  &__list {
+    display: flex;
+    gap: 57px;
+  }
+
+  &__items {
+    &-link {
+      @include font(18px, 500);
+      color: $black;
+    }
+  }
+}

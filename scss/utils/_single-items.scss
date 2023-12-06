@@ -5,6 +5,9 @@
 
   &__text {
     @include font(24px, 700);
+    &_footer {
+      color: #202020;
+    }
   }
 }
 
