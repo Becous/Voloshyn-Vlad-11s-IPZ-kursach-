@@ -1,8 +1,43 @@
 .hero {
+  height: calc(836px - (101px * 2));
+  padding: 101px 0;
+  background-color: $black;
+  text-align: center;
   &__title {
     @include font(72px, 700);
   }
+  &__text {
+    margin-top: 21px;
+    @include font(20px, 500);
+    color: $text-grey2;
+  }
 
   &__button {
+    margin-top: 46px;
+    margin-bottom: 106px;
+    @include button(17px 35px);
+    &-box {
+      position: relative;
+    }
+  }
+  &__pointer-box {
+    width: 123px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 40px;
+    left: 180px;
+  }
+
+  &__stroke {
+    width: 70px;
+    height: 60px;
+  }
+
+  &__button-box-text {
+    @include font(18px, 700);
+    font-family: $font_cavet;
+    transform: rotate(14.854deg);
   }
 }

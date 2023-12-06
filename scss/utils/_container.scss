@@ -9,5 +9,9 @@
     justify-content: space-between;
   }
   &__hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }

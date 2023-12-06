@@ -7,3 +7,78 @@
     @include font(24px, 700);
   }
 }
+
+.block-things {
+  position: relative;
+}
+.block-item {
+  display: flex;
+  width: 338.699px;
+  height: 78.487px;
+  align-items: center;
+  background-color: $dark;
+  padding: 20px 0px 20px 51px;
+  gap: 20px;
+  position: relative;
+  &__twitter {
+    top: 0;
+    left: -500px;
+    position: absolute;
+    transform: rotate(-3.931deg);
+    z-index: 5;
+  }
+
+  &__pinterest {
+    top: 75px;
+    left: -250px;
+    position: absolute;
+    transform: rotate(3.858deg);
+    z-index: 4;
+  }
+
+  &__meta {
+    top: 4px;
+    left: 0;
+    position: absolute;
+    transform: rotate(-7.02deg);
+    z-index: 3;
+  }
+
+  &__dribble {
+    top: 69px;
+    left: 275px;
+    position: absolute;
+    transform: rotate(3.672deg);
+    z-index: 2;
+  }
+}
+.block {
+  &__icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    &-close {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &__text {
+    @include font(18px, 500);
+    position: relative;
+    z-index: 1;
+  }
+
+  &__button {
+    position: absolute;
+    height: 51%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 29.26px 28.12px;
+    background: linear-gradient(#181818, #181818cc);
+    z-index: 0;
+    left: 320px;
+  }
+}
