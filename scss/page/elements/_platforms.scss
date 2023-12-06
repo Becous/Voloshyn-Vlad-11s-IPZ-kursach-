@@ -1,0 +1,35 @@
+.platform {
+  padding: 163px 0 138px;
+  &__title {
+    @include font(64px, 700);
+    color: #323232;
+  }
+
+  &__list {
+    display: flex;
+    padding: 110px 0 138px;
+    gap: 21px;
+  }
+
+  &__item {
+    padding: 37.5px 44.5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    &:focus,
+    &:hover {
+      background-color: $green;
+    }
+  }
+
+  &__icon {
+    width: 88px;
+    height: 88px;
+  }
+
+  &__twetts {
+    display: flex;
+    flex-direction: column;
+    gap: 74px;
+  }
+}
