@@ -1,0 +1,11 @@
+.text {
+  padding: 148px 0;
+  gap: 10px;
+  &__text {
+    @include font(64px, 500);
+    color: #2e2e2e;
+    &_light {
+      color: rgba(46, 46, 46, 0.4);
+    }
+  }
+}
