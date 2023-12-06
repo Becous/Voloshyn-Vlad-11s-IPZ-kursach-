@@ -41,6 +41,13 @@
     justify-content: center;
     align-items: center;
   }
+  &__plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: calc(1440px - (173px * 2));
+  }
 
   &__join {
     display: flex;
