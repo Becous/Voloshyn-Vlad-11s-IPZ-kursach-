@@ -1,0 +1,19 @@
+.join {
+  text-align: center;
+  padding: 77.5px 0;
+  background-color: $green;
+  &__text {
+    @include font(52px, 700);
+    color: #1a1a1a;
+    &_dark {
+      color: rgba(25, 25, 25, 0.4);
+    }
+  }
+
+  &__button {
+    margin-top: 37px;
+    @include button(18px 46px);
+    color: white;
+    background-color: $black;
+  }
+}

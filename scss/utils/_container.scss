@@ -15,6 +15,13 @@
     flex-direction: column;
   }
 
+  &__join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__footer {
     display: flex;
     align-items: center;
