@@ -1,0 +1,8 @@
+.hero {
+  &__title {
+    @include font(72px, 700);
+  }
+
+  &__button {
+  }
+}

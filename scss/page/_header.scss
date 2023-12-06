@@ -1,0 +1,30 @@
+.header {
+  padding-top: 40px;
+  background-color: $black;
+  &__list {
+    display: flex;
+    gap: 57px;
+  }
+
+  &__items {
+    &-link {
+      @include font(18px, 500);
+      color: white;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__button {
+    @include button(0);
+    background-color: transparent;
+    color: white;
+
+    &_active {
+      @include button();
+    }
+  }
+}

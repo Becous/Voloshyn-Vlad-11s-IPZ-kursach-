@@ -1,0 +1,17 @@
+@mixin font($fs: 18px, $fw: 500) {
+  color: white;
+  font-family: $font_clash;
+  font-size: $fs;
+  font-style: normal;
+  font-weight: $fw;
+  line-height: normal;
+}
+
+@mixin button($p: 14px 38px) {
+  @include font(18px, 500);
+  background-color: $green;
+  color: $black;
+  border-radius: 35px;
+  border: none;
+  padding: $p;
+}
