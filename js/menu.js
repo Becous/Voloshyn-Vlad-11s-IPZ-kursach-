@@ -6,3 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
     header.classList.toggle("open");
   });
 });
+
+function scrollToElement(elementId) {
+  var element = document.getElementById(elementId);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+}

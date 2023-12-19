@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Document</title>
   </head>
   <body>
@@ -14,11 +15,12 @@
     <header class="header">
       <div class="container container__header">
         <div class="logo">
-          <img src="./img/logo.png" alt="" class="logo__img" width="40.5" height="40" />
-          <span class="logo__text">Findtrend</span>
-        </div>
+          <a href="#" class="logo logo__link">
+            <img src="./img/logo.png" alt="" class="logo__img" width="40.5" height="40" />
+            <span class="logo__text logo__text">Findtrend</span>
+          </a>
         <div class="mobile-menu-toggle">
-          <button class="mobile-menu-button">
+          <button class="mobile-menu-button" type="button">
             <span class="menu-icon"></span>
           </button>
         </div>
@@ -30,8 +32,8 @@
           <li class="header__items"><a class="header__items-link" href="#">Features</a></li>
         </ul>
         <div class="header__buttons">
-          <button class="header__button">Login</button>
-          <button class="header__button header__button_active">Register</button>
+          <button class="header__button" type="button">Login</button>
+          <button class="header__button header__button_active" type="button">Register</button>
         </div>
       </div>
     </header>
@@ -47,18 +49,18 @@
             imperdiet semper orci tincidunt.
           </p>
           <div class="hero__button-box">
-            <button type="button" class="hero__button">Get started</button>
+            <button type="button" class="hero__button" onclick="scrollToElement('plan')">Get started</button>
             <div class="hero__pointer-box">
               <p class="hero__button-box-text">Start easy and free <br>just this month</p>
               <svg width="52" height="31" fill="white" class="hero__stroke">
-                <use href="./img/icon.svg#stroke">
+                <use href="./img/icon.svg#stroke"></use>
               </svg>
             </div>
           </div>
-          <div class="block-things">
-            <div class="block-item block-item__twitter">
+          <ul class="block-things">
+            <li class="block-item block-item__twitter">
               <svg class="block__icon">
-                <use href="./img/icon.svg#twitter">
+                <use href="./img/icon.svg#twitter"></use>
               </svg>
               <span class="block__text">Crytopunk  -  Search</span>
               <a href="" class="block__button">
@@ -66,41 +68,41 @@
                   <use href="./img/icon.svg#close">
                 </svg>
               </a>
-            </div>
-            <div class="block-item block-item__pinterest">
+            </li>
+            <li class="block-item block-item__pinterest">
               <svg class="block__icon">
-                <use href="./img/icon.svg#pinterest">
+                <use href="./img/icon.svg#pinterest"></use>
               </svg>
               <span class="block__text">Popular design  -  Search</span>
               <a href="" class="block__button">
                 <svg class="block__icon-close">
-                  <use href="./img/icon.svg#close">
+                  <use href="./img/icon.svg#close"></use>
                 </svg>
               </a>
-            </div>
-            <div class="block-item block-item__meta">
+            </li>
+            <li class="block-item block-item__meta">
               <svg class="block__icon">
-                <use href="./img/icon.svg#facebook">
+                <use href="./img/icon.svg#facebook"></use>
               </svg>
               <span class="block__text">Product design  -  Search</span>
               <a href="" class="block__button">
                 <svg class="block__icon-close">
-                  <use href="./img/icon.svg#close">
+                  <use href="./img/icon.svg#close"></use>
                 </svg>
               </a>
-            </div>
-            <div class="block-item block-item__dribble">
+            </li>
+            <li class="block-item block-item__dribble">
               <svg class="block__icon">
-                <use href="./img/icon.svg#dribbble">
+                <use href="./img/icon.svg#dribbble"></use>
               </svg>
               <span class="block__text">Elon musk  -  Search</span>
               <a href="" class="block__button">
                 <svg class="block__icon-close">
-                  <use href="./img/icon.svg#close">
+                  <use href="./img/icon.svg#close"></use>
                 </svg>
               </a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -111,7 +113,7 @@
           <div class="tab__block-box ">
             <div class="tab__pointer-box tab__pointer-box_left">
               <svg width="52" height="31" fill="white" class="tab__stroke">
-                <use href="./img/icon.svg#stroke">
+                <use href="./img/icon.svg#stroke"></use>
               </svg>
               <p class="tab__button-box-text">Start easy and free <br>just this month</p>
             </div>
@@ -120,14 +122,14 @@
               <span class="block__text">Findtrent  - Elon mas</span>
               <a href="" class="block__button">
                 <svg class="block__icon-close">
-                  <use href="./img/icon.svg#close">
+                  <use href="./img/icon.svg#close"></use>
                 </svg>
               </a>
             </div>
             <div class="tab__pointer-box tab__pointer-box_right">
               <p class="tab__button-box-text">Start easy and free <br>just this month</p>
               <svg width="52" height="31" fill="white" class="tab__stroke">
-                <use href="./img/icon.svg#stroke">
+                <use href="./img/icon.svg#stroke"></use>
               </svg>
             </div>
           </div>
@@ -146,25 +148,28 @@
       <section class="startup">
         <div class="container container__startup">
           <h2 class="startup__title">Findtrend make +1000 startup grow</h2>
-          <ul class="startup__list">
-            <li class="startup__item"><img src="./img/microsoft.png" alt="microsoft" width="190" height="40"  class="startup__img"></li>
-            <li class="startup__item"><img src="./img/airtable.png" alt="airtable" width="182" height="40"  class="startup__img"></li>
-            <li class="startup__item"><img src="./img/algolia.png" alt="algolia" width="162" height="40"  class="startup__img"></li>
-            <li class="startup__item"><img src="./img/volvo.png" alt="volvo" width="174" height="24"  class="startup__img"></li>
-            <li class="startup__item"><img src="./img/carrera.png" alt="carrera" width="174" height="42"  class="startup__img"></li>
-            <li class="startup__item"><img src="./img/upwork.png" alt="upwork" width="146" height="42"  class="startup__img"></li>
-            <li class="startup__item"><img src="./img/version.png" alt="version" width="162" height="36"  class="startup__img"></li>
-            <li class="startup__item"><img src="./img/bonanza.png" alt="bonanza" width="162" height="28"  class="startup__img"></li>
-            <li class="startup__item"><img src="./img/magneto.png" alt="magneto" width="164" height="48"  class="startup__img"></li>
-            <li class="startup__item"><img src="./img/suzuki.png" alt="suzuki" width="178" height="34"  class="startup__img"></li>
-            <li class="startup__item"><img src="./img/coinbase.png" alt="coinbase" width="148" height="32"  class="startup__img"></li>
-            <li class="startup__item"><img src="./img/wetransfer.png" alt="wetransfer" width="176" height="38"  class="startup__img"></li>
-            <li class="startup__item"><img src="./img/microsoft.png" alt="microsoft" width="190" height="40"  class="startup__img"></li>
-            <li class="startup__item"><img src="./img/allianz.png" alt="allianz" width="156" height="40"  class="startup__img"></li>
-            <li class="startup__item"><img src="./img/expedia.png" alt="expedia" width="151" height="44"  class="startup__img"></li>
-            <li class="startup__item"><img src="./img/heineken.png" alt="heineken" width="190" height="34"  class="startup__img"></li>
-          </ul>
-        </div>
+          </div>
+          <div class="swiper startup__slider">
+            <ul class="startup__list swiper-wrapper">
+              <li class="startup__item swiper-slide"><img src="./img/microsoft.png" alt="microsoft" width="190" height="40"  class="startup__img"></li>
+              <li class="startup__item swiper-slide"><img src="./img/airtable.png" alt="airtable" width="182" height="40"  class="startup__img"></li>
+              <li class="startup__item swiper-slide"><img src="./img/volvo.png" alt="volvo" width="174" height="24"  class="startup__img"></li>
+              <li class="startup__item swiper-slide"><img src="./img/algolia.png" alt="algolia" width="162" height="40"  class="startup__img"></li>
+              <li class="startup__item swiper-slide"><img src="./img/carrera.png" alt="carrera" width="174" height="42"  class="startup__img"></li>
+              <li class="startup__item swiper-slide"><img src="./img/upwork.png" alt="upwork" width="146" height="42"  class="startup__img"></li>
+              <li class="startup__item swiper-slide"><img src="./img/version.png" alt="version" width="162" height="36"  class="startup__img"></li>
+              <li class="startup__item swiper-slide"><img src="./img/bonanza.png" alt="bonanza" width="162" height="28"  class="startup__img"></li>
+              <li class="startup__item swiper-slide"><img src="./img/magneto.png" alt="magneto" width="164" height="48"  class="startup__img"></li>
+              <li class="startup__item swiper-slide"><img src="./img/suzuki.png" alt="suzuki" width="178" height="34"  class="startup__img"></li>
+              <li class="startup__item swiper-slide"><img src="./img/coinbase.png" alt="coinbase" width="148" height="32"  class="startup__img"></li>
+              <li class="startup__item swiper-slide"><img src="./img/wetransfer.png" alt="wetransfer" width="176" height="38"  class="startup__img"></li>
+              <li class="startup__item swiper-slide"><img src="./img/microsoft.png" alt="microsoft" width="190" height="40"  class="startup__img"></li>
+              <li class="startup__item swiper-slide"><img src="./img/allianz.png" alt="allianz" width="156" height="40"  class="startup__img"></li>
+              <li class="startup__item swiper-slide"><img src="./img/expedia.png" alt="expedia" width="151" height="44"  class="startup__img"></li>
+              <li class="startup__item swiper-slide"><img src="./img/heineken.png" alt="heineken" width="190" height="34"  class="startup__img"></li>
+            </ul>
+          </div>
+        
       </section>
 
       <!-- Platforms -->
@@ -173,46 +178,58 @@
           <h2 class="platform__title">All platform connect to findtrend</h2>
           <ul class="platform__list">
             <li class="platform__item">
-              <svg class="platform__icon">
-                <use href="./img/icon.svg#spotify">
-              </svg>
+              <a href="#">
+                <svg class="platform__icon">
+                  <use href="./img/icon.svg#spotify"></use>
+                </svg>
+              </a>
             </li>
             <li class="platform__item">
-              <svg class="platform__icon">
-                <use href="./img/icon.svg#dribbble">
-              </svg>
+              <a href="#">
+                <svg class="platform__icon">
+                  <use href="./img/icon.svg#dribbble"></use>
+                </svg>
+              </a>
             </li>
             <li class="platform__item">
-              <svg class="platform__icon">
-                <use href="./img/icon.svg#figma">
-              </svg>
+              <a href="#">
+                <svg class="platform__icon">
+                  <use href="./img/icon.svg#figma"></use>
+                </svg>
+              </a>
             </li>
             <li class="platform__item">
-              <svg class="platform__icon">
-                <use href="./img/icon.svg#discord">
-              </svg>
+              <a href="#">
+                <svg class="platform__icon">
+                  <use href="./img/icon.svg#discord"></use>
+                </svg>
+              </a>
             </li>
             <li class="platform__item">
-              <svg class="platform__icon">
-                <use href="./img/icon.svg#tiktok">
-              </svg>
+              <a href="#">
+                <svg class="platform__icon">
+                  <use href="./img/icon.svg#tiktok"></use>
+                </svg>
+              </a>
             </li>
             <li class="platform__item">
-              <svg class="platform__icon">
-                <use href="./img/icon.svg#reddit">
-              </svg>
+              <a href="#">
+                <svg class="platform__icon">
+                  <use href="./img/icon.svg#reddit"></use>
+                </svg>
+              </a>
             </li>
           </ul>
           <div class="platform__twetts">
-            <blockquote class="twitter-tweet"><p lang="zxx" dir="ltr"><a href="https://t.co/sVjwxY9War">pic.twitter.com/sVjwxY9War</a></p>&mdash; NO CONTEXT HUMANS 👤 (@HumansNoContext) <a href="https://twitter.com/HumansNoContext/status/1732105118198247907?ref_src=twsrc%5Etfw">December 5, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <blockquote class="twitter-tweet"><p lang="zxx" dir="ltr"><a href="https://t.co/qhrpP91ooR">pic.twitter.com/qhrpP91ooR</a></p>&mdash; Cursed Videos (@CursedVideos) <a href="https://twitter.com/CursedVideos/status/1732156148449435882?ref_src=twsrc%5Etfw">December 5, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <blockquote class="twitter-tweet"><p lang="zxx" dir="ltr"><a href="https://t.co/kDvZbDpg2L">pic.twitter.com/kDvZbDpg2L</a></p>&mdash; duck (@ExtremeBlitz__) <a href="https://twitter.com/ExtremeBlitz__/status/1732134063824134563?ref_src=twsrc%5Etfw">December 5, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <blockquote class="twitter-tweet"><p lang="uk" dir="ltr">З-поміж усіх людей, що шукають виправдати свою власну бездіяльність і байдужість в певному питанні, немає нікого більш деструктивного за &quot;Дуже добре, шкода, що люди, котрим це треба, це не побачать&quot;.<br>Може якби ви блять сракою поворушили замість бідкатись то й побачили б.</p>&mdash; Ім&#39;я і національність (@Ukrostap) <a href="https://twitter.com/Ukrostap/status/1736614628740718611?ref_src=twsrc%5Etfw">December 18, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <blockquote class="twitter-tweet"><p lang="uk" dir="ltr">Вибір дорослих людей <a href="https://t.co/tVCVZdn8yh">pic.twitter.com/tVCVZdn8yh</a></p>&mdash; Ей пріл (@paneolius) <a href="https://twitter.com/paneolius/status/1736632809060507704?ref_src=twsrc%5Etfw">December 18, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <blockquote class="twitter-tweet"><p lang="uk" dir="ltr">Забороніть лізти до людей з виправленнями &quot;помилок&quot;, якщо про це не просили 🥴</p>&mdash; штин з позняків (ідея) (@i_de_ya_) <a href="https://twitter.com/i_de_ya_/status/1673660511039242241?ref_src=twsrc%5Etfw">June 27, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
         </div>
       </section>
 
       <!-- Plan -->
-      <section class="plan">
+      <section class="plan" id="plan">
         <div class="container container__plan">
           <h2 class="plan__title">Get Your Best deal</h2>
           <div class="plan__choice-box">
@@ -221,132 +238,210 @@
             <p class="plan__text plan__text_year">Yearly</p>
             <div class="plan__pointer-box">
               <svg width="52" height="31" fill="white" class="plan__stroke">
-                <use href="./img/icon.svg#stroke">
+                <use href="./img/icon.svg#stroke"></use>
               </svg>
-              <p class="plan__button-box-text">Save 10%<br/>per month</p>
+              <p class="plan__button-box-text" type="button">Save 10%<br/>per month</p>
             </div>
           </div>
-          <ul class="plan__items">
-            <li class="card ">
-              <div class="card_about">
-                <h3 class="card__title">Personal</h3>
-                <p class="card__text">Special first packet for all</p>
-                <hr class="card__line">
-                <div class="card__price-box">
-                  <h4 class="card__price">$8</h4><span class="card__price card__price_small">/Month</span>
+          </div>
+          <div class="swiper plan__slider">
+            <ul class="plan__items swiper-wrapper">
+              <li class="card swiper-slide">
+                <div class="card_about">
+                  <h3 class="card__title">Personal</h3>
+                  <p class="card__text">Special first packet for all</p>
+                  <hr class="card__line">
+                  <div class="card__price-box">
+                    <h4 class="card__price">$8</h4><span class="card__price card__price_small">/Month</span>
+                  </div>
+                  <ul class="card__plus-list">
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">Up to 5 page each group</p>
+                    </li>
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">Up to 10 page </p>
+                    </li>
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">5 Days group page saved</p>
+                    </li>
+                  </ul>
                 </div>
-                <ul class="card__plus-list">
-                  <li class="card__plus-item">
-                    <svg class="card__plus-icon" width="17.37" height="20.006">
-                      <use href="./img/icon.svg#grop"></use>
-                    </svg>
-                    <p class="card__plus-text">Up to 5 page each group</p>
-                  </li>
-                  <li class="card__plus-item">
-                    <svg class="card__plus-icon" width="17.37" height="20.006">
-                      <use href="./img/icon.svg#grop"></use>
-                    </svg>
-                    <p class="card__plus-text">Up to 10 page </p>
-                  </li>
-                  <li class="card__plus-item">
-                    <svg class="card__plus-icon" width="17.37" height="20.006">
-                      <use href="./img/icon.svg#grop"></use>
-                    </svg>
-                    <p class="card__plus-text">5 Days group page saved</p>
-                  </li>
-                </ul>
-              </div>
-              <button class="card__button">Start free trial</button>
-            </li>
-            <li class="card card_active ">
-              <div class="card_about">
-                <h3 class="card__title">Regular</h3>
-                <p class="card__text">Recommended for personal pro</p>
-                <hr class="card__line">
-                <div class="card__price-box">
-                  <h4 class="card__price">$20</h4><span class="card__price card__price_small">/Month</span>
+                <button class="card__button" type="button">Start free trial</button>
+              </li>
+              <li class="card swiper-slide">
+                <div class="card_about">
+                  <h3 class="card__title">Personal</h3>
+                  <p class="card__text">Special first packet for all</p>
+                  <hr class="card__line">
+                  <div class="card__price-box">
+                    <h4 class="card__price">$8</h4><span class="card__price card__price_small">/Month</span>
+                  </div>
+                  <ul class="card__plus-list">
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">Up to 5 page each group</p>
+                    </li>
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">Up to 10 page </p>
+                    </li>
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">5 Days group page saved</p>
+                    </li>
+                  </ul>
                 </div>
-                <ul class="card__plus-list">
-                  <li class="card__plus-item">
-                    <svg class="card__plus-icon" width="17.37" height="20.006">
-                      <use href="./img/icon.svg#grop"></use>
-                    </svg>
-                    <p class="card__plus-text">Up to 15 page each group</p>
-                  </li>
-                  <li class="card__plus-item">
-                    <svg class="card__plus-icon" width="17.37" height="20.006">
-                      <use href="./img/icon.svg#grop"></use>
-                    </svg>
-                    <p class="card__plus-text">Download page up to 20 </p>
-                  </li>
-                  <li class="card__plus-item">
-                    <svg class="card__plus-icon" width="17.37" height="20.006">
-                      <use href="./img/icon.svg#grop"></use>
-                    </svg>
-                    <p class="card__plus-text">Up to 10 group page</p>
-                  </li>
-                  <li class="card__plus-item">
-                    <svg class="card__plus-icon" width="17.37" height="20.006">
-                      <use href="./img/icon.svg#grop"></use>
-                    </svg>
-                    <p class="card__plus-text">15 Days group page saved</p>
-                  </li>
-                </ul>
-              </div>
-              <button class="card__button">Start free trial</button>
-            </li>
-            <li class="card ">
-              <div class="card_about">
-                <h3 class="card__title">Personal</h3>
-                <p class="card__text">Special first packet for all</p>
-                <hr class="card__line">
-                <div class="card__price-box">
-                  <h4 class="card__price">$48</h4><span class="card__price card__price_small">/Month</span>
+                <button class="card__button" type="button">Start free trial</button>
+              </li>
+              <li class="card swiper-slide">
+                <div class="card_about">
+                  <h3 class="card__title">Regular</h3>
+                  <p class="card__text">Recommended for personal pro</p>
+                  <hr class="card__line">
+                  <div class="card__price-box">
+                    <h4 class="card__price">$20</h4><span class="card__price card__price_small">/Month</span>
+                  </div>
+                  <ul class="card__plus-list">
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">Up to 15 page each group</p>
+                    </li>
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">Download page up to 20 </p>
+                    </li>
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">Up to 10 group page</p>
+                    </li>
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">15 Days group page saved</p>
+                    </li>
+                  </ul>
                 </div>
-                <ul class="card__plus-list">
-                  <li class="card__plus-item">
-                    <svg class="card__plus-icon" width="17.37" height="20.006">
-                      <use href="./img/icon.svg#grop"></use>
-                    </svg>
-                    <p class="card__plus-text">Up to 5 page each group</p>
-                  </li>
-                  <li class="card__plus-item">
-                    <svg class="card__plus-icon" width="17.37" height="20.006">
-                      <use href="./img/icon.svg#grop"></use>
-                    </svg>
-                    <p class="card__plus-text">Up to 10 page </p>
-                  </li>
-                  <li class="card__plus-item">
-                    <svg class="card__plus-icon" width="17.37" height="20.006">
-                      <use href="./img/icon.svg#grop"></use>
-                    </svg>
-                    <p class="card__plus-text">Up to 15 page each group</p>
-                  </li>
-                  <li class="card__plus-item">
-                    <svg class="card__plus-icon" width="17.37" height="20.006">
-                      <use href="./img/icon.svg#grop"></use>
-                    </svg>
-                    <p class="card__plus-text">Up to 10 group page</p>
-                  </li>
-                  <li class="card__plus-item">
-                    <svg class="card__plus-icon" width="17.37" height="20.006">
-                      <use href="./img/icon.svg#grop"></use>
-                    </svg>
-                    <p class="card__plus-text">5 Days group page saved</p>
-                  </li>
-                </ul>
-              </div>
-              <button class="card__button">Start free trial</button>
-            </li>
-          </ul>
-        </div>
+                <button class="card__button" type="button">Start free trial</button>
+              </li>
+              <li class="card swiper-slide">
+                <div class="card_about">
+                  <h3 class="card__title">Personal</h3>
+                  <p class="card__text">Special first packet for all</p>
+                  <hr class="card__line">
+                  <div class="card__price-box">
+                    <h4 class="card__price">$48</h4><span class="card__price card__price_small">/Month</span>
+                  </div>
+                  <ul class="card__plus-list">
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">Up to 5 page each group</p>
+                    </li>
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">Up to 10 page </p>
+                    </li>
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">Up to 15 page each group</p>
+                    </li>
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">Up to 10 group page</p>
+                    </li>
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">5 Days group page saved</p>
+                    </li>
+                  </ul>
+                </div>
+                <button class="card__button" type="button">Start free trial</button>
+              </li>
+              <li class="card swiper-slide">
+                <div class="card_about">
+                  <h3 class="card__title">Personal</h3>
+                  <p class="card__text">Special first packet for all</p>
+                  <hr class="card__line">
+                  <div class="card__price-box">
+                    <h4 class="card__price">$48</h4><span class="card__price card__price_small">/Month</span>
+                  </div>
+                  <ul class="card__plus-list">
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">Up to 5 page each group</p>
+                    </li>
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">Up to 10 page </p>
+                    </li>
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">Up to 15 page each group</p>
+                    </li>
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">Up to 10 group page</p>
+                    </li>
+                    <li class="card__plus-item">
+                      <svg class="card__plus-icon" width="17.37" height="20.006">
+                        <use href="./img/icon.svg#grop"></use>
+                      </svg>
+                      <p class="card__plus-text">5 Days group page saved</p>
+                    </li>
+                  </ul>
+                </div>
+                <button class="card__button" type="button">Start free trial</button>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        
       </section>
 
       <!-- Join -->
       <section class="join">
         <div class="container container__join">
-          <h2 class="join__text">Join us on email for</h2><span class="join__text join__text_dark">more trending topics</span>
-          <button type="button" class="join__button">Join now</button>
+          <h2 class="join__text">Join us on email for<br/><span class="join__text join__text_dark">more trending topics</span></h2>
+          <button type="button" class="join__button" type="button">Join now</button>
         </div>
       </section>
     </main>
@@ -355,11 +450,13 @@
     <footer class="footer">
       <div class="container container__footer">
         <div class="logo">
-          <img src="./img/logo.png" alt="" class="logo__img" width="40.5" height="40" />
-          <span class="logo__text logo__text_footer">Findtrend</span>
+          <a href="#" class="logo logo__link">
+            <img src="./img/logo.png" alt="" class="logo__img" width="40.5" height="40" />
+            <span class="logo__text logo__text_footer">Findtrend</span>
+          </a>
         </div>
         <div class="mobile-menu-toggle">
-          <button class="mobile-menu-button">
+          <button class="mobile-menu-button" type="button">
             <span class="menu-icon"></span>
           </button>
         </div>
@@ -373,5 +470,7 @@
       </div>
     </footer>
     <script src="./js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>  
   </body>
 </html>

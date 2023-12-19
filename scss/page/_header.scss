@@ -19,7 +19,7 @@
   }
 
   &__button {
-    @include button(0);
+    @include button;
     background-color: transparent;
     color: white;
 

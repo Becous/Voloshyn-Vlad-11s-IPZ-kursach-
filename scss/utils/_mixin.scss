@@ -14,4 +14,9 @@
   border-radius: 35px;
   border: none;
   padding: $p;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: $green_hover;
+  }
 }

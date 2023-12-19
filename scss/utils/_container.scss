@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     max-width: calc(1440px - (77.5px * 2));
-    justify-content: space-between;
+    justify-content: center;
   }
   &__hero {
     display: flex;
@@ -17,7 +17,7 @@
   &__tab {
     display: flex;
     flex-direction: column;
-    max-width: calc(1440px - (334px * 2));
+    max-width: calc(100% - (125px * 2));
     justify-content: center;
     align-items: center;
   }

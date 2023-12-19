@@ -29,6 +29,10 @@
     position: absolute;
     transform: rotate(-3.931deg);
     z-index: 5;
+    & > .block__button {
+      left: 265px;
+      padding: 29.26px 55.12px;
+    }
   }
 
   &__pinterest {
@@ -37,6 +41,10 @@
     position: absolute;
     transform: rotate(3.858deg);
     z-index: 4;
+    & > .block__button {
+      left: 300px;
+      padding: 29.26px 35.12px;
+    }
   }
 
   &__meta {
@@ -45,6 +53,10 @@
     position: absolute;
     transform: rotate(-7.02deg);
     z-index: 3;
+    & > .block__button {
+      left: 300px;
+      padding: 29.26px 35.12px;
+    }
   }
 
   &__dribble {
@@ -53,8 +65,16 @@
     position: absolute;
     transform: rotate(3.672deg);
     z-index: 2;
+    & > .block__button {
+      left: 260px;
+      padding: 29.26px 57.12px;
+    }
   }
   &__tab {
+    & > .block__button {
+      left: 260px;
+      padding: 29.26px 57.12px;
+    }
   }
 }
 .block {
@@ -86,7 +106,7 @@
     align-items: center;
     justify-content: center;
     padding: 29.26px 28.12px;
-    background: linear-gradient(#181818, #181818cc);
+    background: linear-gradient(rgb(24, 24, 24, 0.8), rgba(24, 24, 24));
     z-index: 1;
     left: 320px;
   }

@@ -41,33 +41,51 @@
     width: 70px;
     height: 60px;
     transform: rotate(111deg);
+    color: white;
   }
   &__items {
     display: flex;
     gap: 39px;
   }
 }
-
+.swiper{
+  max-width: 100%;
+}
+.swiper-wrapper{
+  padding-bottom: 50px;
+}
+.swiper-pagination-bullet{
+  background-color: white !important;
+  &-active{
+    background-color: $green !important;
+  }
+}
 .card {
+  margin: 0 auto !important;
   padding: 29px 32px;
-  width: 339px;
-  height: 535px;
-  display: flex;
+  width: 339px !important;
+  height: 535px !important;
+  display: flex !important;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
   background-color: white;
   border-radius: 20px;
   transition: background-color 0.5s;
-  &_active,
-  &:focus,
-  &:hover {
+  border: 5px solid transparent;
+  transition: 250ms ease-in;
+  &_active{
     background-color: $green;
     & > .card__button {
       background-color: #101010;
       color: white;
     }
   }
+  &:focus,
+  &:hover{
+    border: 5px solid $green
+    }
+  
 
   &_about {
     display: flex;
@@ -129,6 +147,13 @@
   &__button {
     @include button(17px 68px);
     transition: background-color 0.5s, color 0.5s;
+    border: 1px solid transparent;
+    &:hover,
+    &:focus{
+      background-color: transparent;
+      border: 1px solid black;
+      color: black;
+    }
     & .card {
       align-items: center;
     }
