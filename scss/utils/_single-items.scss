@@ -10,10 +10,6 @@
     }
   }
 }
-
-.block-things {
-  position: relative;
-}
 .block-item {
   display: flex;
   width: 338.699px;
@@ -24,8 +20,8 @@
   gap: 20px;
   position: relative;
   &__twitter {
-    top: 0;
-    left: -500px;
+    bottom: 157px;
+    left: 16.8%;
     position: absolute;
     transform: rotate(-3.931deg);
     z-index: 5;
@@ -36,8 +32,8 @@
   }
 
   &__pinterest {
-    top: 75px;
-    left: -250px;
+    bottom: 101px;
+    left: 29.4%;
     position: absolute;
     transform: rotate(3.858deg);
     z-index: 4;
@@ -48,8 +44,8 @@
   }
 
   &__meta {
-    top: 4px;
-    left: 0;
+    bottom: 143.7px;
+    right: 33.3%;
     position: absolute;
     transform: rotate(-7.02deg);
     z-index: 3;
@@ -60,8 +56,8 @@
   }
 
   &__dribble {
-    top: 69px;
-    left: 275px;
+    bottom: 106px;
+    right: 16.7%;
     position: absolute;
     transform: rotate(3.672deg);
     z-index: 2;

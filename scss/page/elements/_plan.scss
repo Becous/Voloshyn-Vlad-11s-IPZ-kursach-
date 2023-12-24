@@ -17,8 +17,6 @@
     &_year {
       font-weight: 400;
     }
-    &_month {
-    }
   }
   &__pointer-box {
     width: 123px;
@@ -48,15 +46,15 @@
     gap: 39px;
   }
 }
-.swiper{
+.swiper {
   max-width: 100%;
 }
-.swiper-wrapper{
+.swiper-wrapper {
   padding-bottom: 50px;
 }
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: white !important;
-  &-active{
+  &-active {
     background-color: $green !important;
   }
 }
@@ -74,7 +72,7 @@
   transition: background-color 0.5s;
   border: 5px solid transparent;
   transition: 250ms ease-in;
-  &_active{
+  &_active {
     background-color: $green;
     & > .card__button {
       background-color: #101010;
@@ -82,10 +80,9 @@
     }
   }
   &:focus,
-  &:hover{
-    border: 5px solid $green
-    }
-  
+  &:hover {
+    border: 5px solid $green;
+  }
 
   &_about {
     display: flex;
@@ -149,8 +146,8 @@
     transition: background-color 0.5s, color 0.5s;
     border: 1px solid transparent;
     &:hover,
-    &:focus{
-      background-color: transparent;
+    &:focus {
+      background-color: white;
       border: 1px solid black;
       color: black;
     }

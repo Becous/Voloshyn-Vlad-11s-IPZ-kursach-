@@ -3,6 +3,7 @@
   padding: 101px 0;
   background-color: $black;
   text-align: center;
+  position: relative;
   &__title {
     @include font(72px, 700);
   }
