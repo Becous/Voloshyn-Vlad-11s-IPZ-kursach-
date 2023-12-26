@@ -1,0 +1,71 @@
+.menuItem {
+  display: block;
+  margin: 2rem 4rem;
+  font-size: 1.8rem;
+  color: white;
+  font-family: $font_clash;
+  text-decoration: none;
+}
+
+.menuItem:hover,
+.menuItem:focus {
+  color: $green_hover;
+}
+
+.hamburger {
+  display: none;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  @media (max-width: 900px) {
+    display: block;
+  }
+}
+
+.closeIcon {
+  display: none;
+  transform: rotate(4deg);
+  transition: transform 0.2s;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__buttons {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.menuIcon,
+.closeIcon {
+  color: white;
+}
