@@ -1,14 +1,36 @@
 .platform {
   padding: 163px 0 138px;
+  @include mobile {
+    padding: 100px 0;
+  }
+  @include tablet {
+    padding: 120px 0;
+  }
   &__title {
     @include font(64px, 700);
     color: #323232;
+    @include mobile {
+      font-size: 33px;
+      text-align: center;
+    }
+    @include tablet {
+      font-size: 45px;
+      text-align: center;
+    }
   }
 
   &__list {
     display: flex;
     padding: 110px 0 138px;
     gap: 21px;
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include tablet {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {

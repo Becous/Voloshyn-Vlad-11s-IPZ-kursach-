@@ -25,6 +25,16 @@
     position: absolute;
     transform: rotate(-3.931deg);
     z-index: 5;
+    @include mobile {
+      bottom: 350.8px;
+      transform: translateX(-50%) rotate(-3.931deg);
+      left: 50%;
+    }
+    @include tablet {
+      bottom: 350.8px;
+      transform: translateX(-50%) rotate(3.858deg);
+      left: 50%;
+    }
     & > .block__button {
       left: 265px;
       padding: 29.26px 55.12px;
@@ -41,6 +51,16 @@
       left: 300px;
       padding: 29.26px 35.12px;
     }
+    @include mobile {
+      bottom: 26.51px;
+      transform: translateX(-50%) rotate(-3.86deg);
+      left: 50%;
+    }
+    @include tablet {
+      bottom: 26.51px;
+      transform: translateX(-50%) rotate(-3.86deg);
+      left: 50%;
+    }
   }
 
   &__meta {
@@ -49,6 +69,17 @@
     position: absolute;
     transform: rotate(-7.02deg);
     z-index: 3;
+    @include mobile {
+      z-index: 2;
+      bottom: 234.18px;
+      transform: translateX(-50%) rotate(-7.02deg);
+      left: 50%;
+    }
+    @include tablet {
+      bottom: 234.18px;
+      transform: translateX(-50%) rotate(-7.02deg);
+      left: 50%;
+    }
     & > .block__button {
       left: 300px;
       padding: 29.26px 35.12px;
@@ -61,6 +92,18 @@
     position: absolute;
     transform: rotate(3.672deg);
     z-index: 2;
+    @include mobile {
+      bottom: 139.2px;
+      transform: translateX(-50%) rotate(3.6deg);
+      left: 50%;
+      z-index: 3;
+    }
+    @include tablet {
+      bottom: 139.2px;
+      z-index: 3;
+      transform: translateX(-50%) rotate(3.36deg);
+      left: 50%;
+    }
     & > .block__button {
       left: 260px;
       padding: 29.26px 57.12px;

@@ -2,6 +2,16 @@
   &__list {
     display: flex;
     gap: 57px;
+    @include tablet {
+      text-align: center;
+      flex-direction: column;
+      gap: 45px;
+    }
+    @include mobile {
+      text-align: center;
+      flex-direction: column;
+      gap: 45px;
+    }
   }
 
   &__items {

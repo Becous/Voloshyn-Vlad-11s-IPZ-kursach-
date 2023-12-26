@@ -5,6 +5,12 @@
   &__text {
     @include font(52px, 700);
     color: #1a1a1a;
+    @include tablet {
+      font-size: 45px;
+    }
+    @include mobile {
+      font-size: 33px;
+    }
     &_dark {
       color: rgba(25, 25, 25, 0.4);
     }

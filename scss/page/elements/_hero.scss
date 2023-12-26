@@ -4,13 +4,25 @@
   background-color: $black;
   text-align: center;
   position: relative;
+  @include mobile {
+    height: 650px;
+  }
+  @include tablet {
+    height: 750px;
+  }
   &__title {
     @include font(72px, 700);
+    @include mobile {
+      font-size: 37px;
+    }
   }
   &__text {
     margin-top: 21px;
     @include font(20px, 500);
     color: $text-grey2;
+    @include mobile {
+      font-size: 14px;
+    }
   }
 
   &__button {
@@ -29,6 +41,9 @@
     position: absolute;
     top: 40px;
     left: 180px;
+    @include mobile {
+      display: none;
+    }
   }
 
   &__stroke {

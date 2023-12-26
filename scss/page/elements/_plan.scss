@@ -3,6 +3,12 @@
   padding: 98px 0 75px;
   &__title {
     @include font(52px, 700);
+    @include mobile {
+      font-size: 33px;
+    }
+    @include tablet {
+      font-size: 45px;
+    }
   }
   &__choice-box {
     display: flex;
@@ -155,6 +161,4 @@
       align-items: center;
     }
   }
-}
-.h3 {
 }
