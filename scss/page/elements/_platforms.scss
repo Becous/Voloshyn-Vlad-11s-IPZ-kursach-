@@ -26,6 +26,7 @@
     @include mobile {
       flex-wrap: wrap;
       justify-content: center;
+      padding: 103px 0 101px;
     }
     @include tablet {
       justify-content: center;

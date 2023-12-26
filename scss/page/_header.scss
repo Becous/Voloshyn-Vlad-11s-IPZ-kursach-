@@ -1,6 +1,12 @@
 .header {
   padding-top: 40px;
   background-color: $black;
+  @include tablet {
+    overflow-x: hidden;
+  }
+  @include mobile {
+    overflow-x: hidden;
+  }
   &__list {
     display: flex;
     gap: 57px;
