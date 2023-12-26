@@ -36,8 +36,14 @@
     @include mobile {
       transform: rotate(0);
     }
+    @include tablet {
+      transform: rotate(0);
+    }
     &_left {
       @include mobile {
+        transform: rotate(41.85deg) translateX(15px);
+      }
+      @include tablet {
         transform: rotate(41.85deg) translateX(15px);
       }
     }
@@ -59,11 +65,17 @@
       @include mobile {
         transform: rotate(-60.45deg);
       }
+      @include tablet {
+        transform: rotate(-60.45deg);
+      }
     }
     &_right {
       right: 0;
       bottom: 125px;
       @include mobile {
+        transform: rotate(-14.85deg);
+      }
+      @include tablet {
         transform: rotate(-14.85deg);
       }
       & .tab__stroke {
