@@ -1,10 +1,20 @@
-const checkbox = document.getElementById("switch");
-const professional = document.getElementById("professional");
-const master = document.getElementById("master");
-const basic = document.getElementById("basic");
+const checkbox = document.getElementById("switch"); // Ensure correct quotes for ID
 
 checkbox.addEventListener("click", () => {
-  basic.textContent = basic.textContent === "$8" ? "$86.4" : "$8";
-  professional.textContent = professional.textContent === "$20" ? "$216 " : "$20";
-  master.textContent = master.textContent === "$48" ? "$518" : "$48";
+  const allBasicElements = document.querySelectorAll("#basic");
+  const allProfessionalElements = document.querySelectorAll("#professional");
+  const allMasterElements = document.querySelectorAll("#master");
+
+  allBasicElements.forEach((element) => {
+    element.textContent = element.textContent === "$8" ? "$86.4" : "$8";
+  });
+
+  allMasterElements.forEach((element) => {
+    element.textContent = element.textContent === "$20" ? "$216" : "$20";
+  });
+
+  allProfessionalElements.forEach((element) => {
+    element.textContent = element.textContent === "$48" ? "$518" : "$48";
+  });
 });
+x;

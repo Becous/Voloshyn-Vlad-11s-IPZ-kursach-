@@ -1,6 +1,9 @@
 .plan {
   background-color: $black;
   padding: 98px 0 75px;
+  .swiper {
+    width: 80%;
+  }
   &__title {
     @include font(52px, 700);
     @include mobile {
@@ -47,14 +50,15 @@
     transform: rotate(111deg);
     color: white;
   }
-  &__items {
-    display: flex;
-    gap: 39px;
-  }
 }
 .swiper {
-  max-width: 100%;
+  .swiper-slide.card {
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+  }
 }
+
 .swiper-wrapper {
   padding-bottom: 50px;
 }
@@ -65,11 +69,7 @@
   }
 }
 .card {
-  margin: 0 auto !important;
   padding: 29px 32px;
-  width: 339px !important;
-  height: 535px !important;
-  display: flex !important;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
@@ -105,7 +105,9 @@
   &__text {
     @include font();
     color: #585858;
-    margin-bottom: 17px;
+    padding-bottom: 17px;
+    margin-bottom: 13px;
+    border-bottom: #a6a4a4 1px solid;
   }
 
   &__line {
@@ -148,6 +150,7 @@
   }
 
   &__button {
+    margin-top: 45px;
     @include button(17px 68px);
     transition: background-color 0.5s, color 0.5s;
     border: 1px solid transparent;

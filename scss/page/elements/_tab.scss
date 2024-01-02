@@ -60,22 +60,30 @@
       margin-bottom: 10px;
     }
     &_left {
-      left: 0;
-      top: 120px;
+      left: -128px;
+      top: 38px;
       @include mobile {
+        left: 0;
+        top: 120px;
         transform: rotate(-60.45deg);
       }
       @include tablet {
+        left: 0;
+        top: 120px;
         transform: rotate(-60.45deg);
       }
     }
     &_right {
-      right: 0;
-      bottom: 125px;
+      right: -128px;
+      bottom: 77px;
       @include mobile {
+        right: 0;
+        bottom: 125px;
         transform: rotate(-14.85deg);
       }
       @include tablet {
+        right: 0;
+        bottom: 125px;
         transform: rotate(-14.85deg);
       }
       & .tab__stroke {

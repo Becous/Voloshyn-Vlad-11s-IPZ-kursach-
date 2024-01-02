@@ -1,26 +1,24 @@
 const swiper = new Swiper(".plan__slider", {
-  slidesPerView: "auto",
+  initialSlide: 2,
+  slidesPerView: 1,
   spaceBetween: 50,
   slideToClickedSlide: true,
-  loop: true,
-  centeredSlides: true,
+  // centeredSlides: true,
   slideActiveClass: "card_active",
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   breakpoints: {
-    1024: {
+    650: {
+      spaceBetween: 35,
+    },
+    900: {
       spaceBetween: 70,
       slidesPerView: 2,
     },
-    650: {
-      spaceBetween: 35,
-      slidesPerView: 1,
-    },
-    0: {
-      spaceBetween: 15,
-      slidesPerView: 1,
+    1400: {
+      slidesPerView: 3,
     },
   },
 });
