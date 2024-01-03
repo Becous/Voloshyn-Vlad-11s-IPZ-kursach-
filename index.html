@@ -459,7 +459,7 @@
       <section class="join">
         <div class="container container__join">
           <h2 class="join__text">Join us on email for<br/><span class="join__text join__text_dark">more trending topics</span></h2>
-          <button type="button" class="join__button" type="button">Join now</button>
+          <button type="button" class="join__button" type="button" data-modal-open>Join now</button>
         </div>
       </section>
     </main>
@@ -483,9 +483,28 @@
         </ul>
       </div>
     </footer>
+
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window no-scroll">
+        <button type="button" class="close-button" data-modal-close>
+          <svg class="close-button__icon" fill="black">
+            <use href="./img/icon.svg#close"></use>
+          </svg>
+        </button>
+        <h2 class="form__h2">Write your email</h2>
+        <form id="subscribe" class="modal-window__form">
+          <textarea id="message" cols="30" rows="10" class="modal-window__input" placeholder="Your message"></textarea>
+          <button type="submit" class="modal-window__submit">subscribe</button>
+        </form>
+      </div>
+    </div>
+
     <script src="./js/menu.js"></script>
-    №<script src="./js/price.js"></script>
+    <script src="./js/price.js"></script>
+    <script src="./js/scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>  
+    <script src="./js/modal.js"></script>
   </body>
 </html>
