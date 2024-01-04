@@ -19,6 +19,10 @@
     &-link {
       @include font(18px, 500);
       color: white;
+      &:focus,
+      &:hover {
+        color: $green_hover;
+      }
     }
   }
 
