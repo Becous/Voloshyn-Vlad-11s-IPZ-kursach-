@@ -31,8 +31,8 @@
 
       var subscribe = `New message recieved :${message}`;
 
-      var token = "6270391808:AAEeDST2kRZacIxzisJz-GBovp8C8uRHcY0";
-      var chat_id = "308432208";
+      var token = "6625128053:AAEuOqjVxBoiORJOuh7W9YBWq2P09-g_acQ";
+      var chat_id = "5110061534";
       var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${subscribe}&parse_mode=html`;
 
       let api = new XMLHttpRequest();
