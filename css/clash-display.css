@@ -7,3 +7,11 @@
   font-display: swap;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Caveat";
+  src: url(../font/Caveat-VariableFont_wght.ttf) format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}

@@ -5,5 +5,148 @@
 
   &__text {
     @include font(24px, 700);
+    &_footer {
+      color: #202020;
+    }
+  }
+}
+.block-item {
+  display: flex;
+  width: 338.699px;
+  height: 78.487px;
+  align-items: center;
+  background-color: $dark;
+  padding: 20px 0px 20px 51px;
+  gap: 20px;
+  position: relative;
+  &__twitter {
+    bottom: 157px;
+    left: 16.8%;
+    position: absolute;
+    transform: rotate(-3.931deg);
+    z-index: 5;
+    @include mobile {
+      bottom: 350.8px;
+      transform: translateX(-50%) rotate(-3.931deg);
+      left: 50%;
+    }
+    @include tablet {
+      bottom: 350.8px;
+      transform: translateX(-50%) rotate(3.858deg);
+      left: 50%;
+    }
+    & > .block__button {
+      left: 265px;
+      padding: 29.26px 55.12px;
+    }
+  }
+
+  &__pinterest {
+    bottom: 101px;
+    left: 29.4%;
+    position: absolute;
+    transform: rotate(3.858deg);
+    z-index: 4;
+    & > .block__button {
+      left: 300px;
+      padding: 29.26px 35.12px;
+    }
+    @include mobile {
+      bottom: 26.51px;
+      transform: translateX(-50%) rotate(-3.86deg);
+      left: 50%;
+    }
+    @include tablet {
+      bottom: 26.51px;
+      transform: translateX(-50%) rotate(-3.86deg);
+      left: 50%;
+    }
+  }
+
+  &__meta {
+    bottom: 143.7px;
+    right: 33.3%;
+    position: absolute;
+    transform: rotate(-7.02deg);
+    z-index: 3;
+    @include mobile {
+      z-index: 2;
+      bottom: 234.18px;
+      transform: translateX(-50%) rotate(-7.02deg);
+      left: 50%;
+    }
+    @include tablet {
+      bottom: 234.18px;
+      transform: translateX(-50%) rotate(-7.02deg);
+      left: 50%;
+    }
+    & > .block__button {
+      left: 300px;
+      padding: 29.26px 35.12px;
+    }
+  }
+
+  &__dribble {
+    bottom: 106px;
+    right: 16.7%;
+    position: absolute;
+    transform: rotate(3.672deg);
+    z-index: 2;
+    @include mobile {
+      bottom: 139.2px;
+      transform: translateX(-50%) rotate(3.6deg);
+      left: 50%;
+      z-index: 3;
+    }
+    @include tablet {
+      bottom: 139.2px;
+      z-index: 3;
+      transform: translateX(-50%) rotate(3.36deg);
+      left: 50%;
+    }
+    & > .block__button {
+      left: 260px;
+      padding: 29.26px 57.12px;
+    }
+  }
+  &__tab {
+    & > .block__button {
+      left: 260px;
+      padding: 29.26px 57.12px;
+    }
+  }
+}
+.block {
+  &__icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    &-close {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &__text {
+    @include font(18px, 500);
+    position: relative;
+    z-index: 1;
+  }
+  &__img {
+    width: 40.5px;
+    height: 40px;
+  }
+
+  &__button {
+    position: absolute;
+    height: 50%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 29.26px 28.12px;
+    background: linear-gradient(rgb(24, 24, 24, 0.8), rgba(24, 24, 24));
+    z-index: 1;
+    left: 320px;
   }
 }

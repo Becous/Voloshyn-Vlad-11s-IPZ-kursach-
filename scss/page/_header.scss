@@ -1,25 +1,44 @@
 .header {
   padding-top: 40px;
   background-color: $black;
+  @include tablet {
+    overflow-x: hidden;
+  }
+  @include mobile {
+    overflow-x: hidden;
+  }
   &__list {
     display: flex;
     gap: 57px;
+    @media (max-width: 824px) {
+      display: none;
+    }
   }
 
   &__items {
     &-link {
       @include font(18px, 500);
       color: white;
+      &:focus,
+      &:hover {
+        color: $green_hover;
+      }
     }
   }
 
   &__buttons {
     display: flex;
-    gap: 40px;
+    gap: 20px;
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
   }
 
   &__button {
-    @include button(0);
+    @include button;
     background-color: transparent;
     color: white;
 

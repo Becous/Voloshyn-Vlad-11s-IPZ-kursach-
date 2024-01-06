@@ -1,0 +1,58 @@
+.platform {
+  padding: 163px 0 138px;
+  @include mobile {
+    padding: 100px 0;
+  }
+  @include tablet {
+    padding: 120px 0;
+  }
+  &__title {
+    @include font(64px, 700);
+    color: #323232;
+    @include mobile {
+      font-size: 33px;
+      text-align: center;
+    }
+    @include tablet {
+      font-size: 45px;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+    padding: 110px 0 138px;
+    gap: 21px;
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 103px 0 101px;
+    }
+    @include tablet {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    padding: 37.5px 44.5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    &:focus,
+    &:hover {
+      background-color: $green;
+    }
+  }
+
+  &__icon {
+    width: 88px;
+    height: 88px;
+  }
+
+  &__twetts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}

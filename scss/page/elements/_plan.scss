@@ -1,0 +1,167 @@
+.plan {
+  background-color: $black;
+  padding: 98px 0 75px;
+  .swiper {
+    width: 80%;
+  }
+  &__title {
+    @include font(52px, 700);
+    @include mobile {
+      font-size: 33px;
+    }
+    @include tablet {
+      font-size: 45px;
+    }
+  }
+  &__choice-box {
+    display: flex;
+    gap: 32px;
+    margin-top: 43px;
+    position: relative;
+    align-items: center;
+    margin-bottom: 145px;
+  }
+  &__text {
+    @include font(18px, 500);
+    &_year {
+      font-weight: 400;
+    }
+  }
+  &__pointer-box {
+    width: 123px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 180px;
+    transform: rotate(-62deg);
+  }
+
+  &__button-box-text {
+    @include font(18px, 700);
+    font-family: $font_cavet;
+    transform: rotate(32deg);
+  }
+
+  &__stroke {
+    width: 70px;
+    height: 60px;
+    transform: rotate(111deg);
+    color: white;
+  }
+}
+.swiper {
+  .swiper-slide.card {
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+  }
+}
+
+.swiper-wrapper {
+  padding-bottom: 50px;
+}
+.swiper-pagination-bullet {
+  background-color: white !important;
+  &-active {
+    background-color: $green !important;
+  }
+}
+.card {
+  padding: 29px 32px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
+  transition: background-color 0.5s;
+  border: 5px solid transparent;
+  transition: 250ms ease-in;
+  &_active {
+    background-color: $green;
+    & > .card__button {
+      background-color: #101010;
+      color: white;
+    }
+  }
+  &:focus,
+  &:hover {
+    border: 5px solid $green;
+  }
+
+  &_about {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  &__title {
+    @include font(30px, 700);
+    color: #1e1e1e;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    @include font();
+    color: #585858;
+    padding-bottom: 17px;
+    margin-bottom: 13px;
+    border-bottom: #a6a4a4 1px solid;
+  }
+
+  &__line {
+    width: 283px;
+    height: 1px;
+  }
+  &__price-box {
+    display: flex;
+    align-items: baseline;
+  }
+  &__price {
+    @include font(60px);
+    color: #1e1e1e;
+    white-space: nowrap;
+    &_small {
+      font-size: 14px;
+      margin-left: 10px;
+    }
+  }
+
+  &__plus-list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  &__plus-item {
+    display: flex;
+    gap: 11px;
+  }
+
+  &__plus-icon {
+    fill: black;
+  }
+
+  &__plus-text {
+    @include font(18px, 400);
+    color: #1e1e1e;
+  }
+
+  &__button {
+    margin-top: 45px;
+    @include button(17px 68px);
+    transition: background-color 0.5s, color 0.5s;
+    border: 1px solid transparent;
+    &:hover,
+    &:focus {
+      background-color: white;
+      border: 1px solid black;
+      color: black;
+    }
+    & .card {
+      align-items: center;
+    }
+  }
+}

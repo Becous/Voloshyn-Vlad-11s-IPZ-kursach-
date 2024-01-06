@@ -1,0 +1,25 @@
+.join {
+  text-align: center;
+  padding: 77.5px 0;
+  background-color: #beff67;
+  &__text {
+    @include font(52px, 700);
+    color: #1a1a1a;
+    @include tablet {
+      font-size: 45px;
+    }
+    @include mobile {
+      font-size: 33px;
+    }
+    &_dark {
+      color: rgba(25, 25, 25, 0.4);
+    }
+  }
+
+  &__button {
+    margin-top: 37px;
+    @include button(18px 46px);
+    color: white;
+    background-color: $black;
+  }
+}

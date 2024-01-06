@@ -1,13 +1,80 @@
 .container {
-  padding: 0;
+  padding: 0 15px;
   max-width: calc(1440px - (170px * 2));
   margin: 0 auto;
   &__header {
     display: flex;
     align-items: center;
-    max-width: calc(1440px - (77.5px * 2));
     justify-content: space-between;
+    max-width: calc(1440px - (77.5px * 2));
   }
   &__hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__tab {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100% - (125px * 2));
+    justify-content: center;
+    align-items: center;
+    @include mobile {
+      max-width: 100%;
+    }
+    @include tablet {
+      max-width: 100%;
+    }
+  }
+  &__text {
+    display: flex;
+    max-width: calc(1440px - (141px * 2));
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__startup {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(1440px - (144px * 2));
+    justify-content: center;
+    align-items: center;
+  }
+  &__platform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: calc(1440px - (173px * 2));
+  }
+
+  &__join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    max-width: calc(1440px - (142.75px * 2));
+    justify-content: space-between;
+    padding: 24px 0;
+    @include tablet {
+      gap: 30px;
+      flex-direction: column;
+    }
+    @include mobile {
+      gap: 30px;
+      flex-direction: column;
+    }
   }
 }

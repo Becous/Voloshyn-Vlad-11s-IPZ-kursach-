@@ -1,0 +1,121 @@
+.no-scroll {
+  overflow: hidden;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: calc(100% / 100 * 2);
+  background-color: $dark;
+  opacity: 1;
+  border-radius: 4px;
+  width: 70%;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__input {
+    font-size: 20px;
+    color: $green;
+    padding: 10px;
+    height: 50px;
+    background-color: $dark;
+    border: 1px solid $green;
+    outline: none;
+    resize: none;
+    height: 100px;
+    &::placeholder {
+      color: $green;
+    }
+    &::placeholder:hover,
+    &::placeholder:focus {
+      color: $green_hover;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__submit {
+    background-color: $green;
+    color: white;
+    padding: 15px 5px;
+    border: 1px solid transparent;
+    transition: 250ms ease-in;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 24px;
+    margin-top: auto;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      border: 1px solid $green;
+      color: $green;
+    }
+  }
+}
+.close-button {
+  display: flex;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: $dark;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: color 0.5s;
+    &:hover,
+    &:focus {
+      fill: $green_hover;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  &__h2 {
+    @include font;
+    color: $green;
+    font-size: 24px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+}
